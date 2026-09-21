@@ -1,0 +1,18 @@
+{
+  "contexts": "../data/rrc/contexts_pilot.csv",
+  "key_file": "../data/rrc/secret.key",
+  "model": "../data/rrc/kmer4.json",
+  "out": "../artifacts/rrc_suite_kmer",
+  "device": "cpu",
+  "bits": [32, 64, 128],
+  "length": 512,
+  "context_bases": 1024,
+  "precision_bits": 12,
+  "max_bases": 4096,
+  "detectors": ["logreg", "cnn"],
+  "epochs": 10,
+  "batch_size": 32,
+  "seed": 2026,
+  "bootstrap": 500,
+  "fpr": 0.01
+}
